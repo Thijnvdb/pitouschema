@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pitouschema/static/css/main.6cf9224a.css",
+    "main.js": "/pitouschema/static/js/main.f47b50ea.js",
+    "static/js/787.175fc1b0.chunk.js": "/pitouschema/static/js/787.175fc1b0.chunk.js",
+    "index.html": "/pitouschema/index.html",
+    "main.6cf9224a.css.map": "/pitouschema/static/css/main.6cf9224a.css.map",
+    "main.f47b50ea.js.map": "/pitouschema/static/js/main.f47b50ea.js.map",
+    "787.175fc1b0.chunk.js.map": "/pitouschema/static/js/787.175fc1b0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6cf9224a.css",
+    "static/js/main.f47b50ea.js"
+  ]
+}
