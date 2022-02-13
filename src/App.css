@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-size: 300px 300px;
+  user-select: none;
+}
+
+img.pitou {
+  animation: shake 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+  margin: auto;
+  user-select: none;
+}
+
+img.pitou.reverse {
+  animation-direction: alternate;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+.pitouholder {
+  width: 100%;
+  max-width: 600px;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.pitouholder .pitou {
+  max-height: 25vh;
+  overflow: hidden;
+}
