@@ -13,12 +13,14 @@ Date.prototype.getWeekNumber = function(){
 function App() {
   const people = ["Bram", "Isa", "Thijn", "Thomas", "Frederik"]
   const styles = ["rainbow", "blues", "superhero", "radial", "tilt", "purple", "horizon", "slate"]
-  const [person, setPerson] = useState();
-  const [wordart, setWordart] = useState();
+  // const [person, setPerson] = useState();
+  const [week, setWeek] = useState(0);
+  const [wordart, setWordart] = useState(); 
 
   useEffect(()=> {
-    let week = new Date().getWeekNumber();
-    setPerson(people[week % people.length]);
+    let w = new Date().getWeekNumber();
+    // setPerson();
+    setWeek(w)
     setWordart(styles[Math.floor(Math.random() * styles.length)]);
   },[]);
 
@@ -46,8 +48,9 @@ function App() {
           }
         </div>
         <h2 className='text-5xl z-10 text-center'>Deze week mag...</h2>
-        <h1 className={'z-10 wordart text-7xl lg:text-9xl ' + wordart}><span className='text'>{person}</span></h1>
+        <h1 className={'z-10 wordart text-7xl lg:text-9xl ' + wordart}><span className='text'>{people[week % people.length]}</span></h1>
         <h2 className='text-5xl z-10 text-center'>De bak verschonen!</h2>
+        <h3 className='text-4xl z-10 text-center'>Volgende week mag {people[(week + 1) % people.length]}</h3>
         <div className={`pitouholder`}>
           {
             randomArray().map((x,i) => <img key={i+"b"} src={`${process.env.PUBLIC_URL}/pitou${x}.png`} className={"z-10 max-w-1/3 pitou "+ getRandomAnimationDirection()}/>)
