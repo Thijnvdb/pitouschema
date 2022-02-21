@@ -44,7 +44,7 @@ function App() {
       <div style={{backgroundImage: `url(${process.env.PUBLIC_URL}/tile.gif)`}} className="App bg-cover flex justify-evenly flex-col items-center">
         <div className={`pitouholder`}>
           {
-            randomArray().map((x,i) => <img key={i+"a"} src={`${process.env.PUBLIC_URL}/pitou${x}.png`} className={"z-10 max-w-1/3  pitou "+ getRandomAnimationDirection()}/>)
+            randomArray().map((x,i) => <img key={i+"a"} alt="pitou!" src={`${process.env.PUBLIC_URL}/pitou${x}.png`} className={"z-10 max-w-1/3  pitou "+ getRandomAnimationDirection()}/>)
           }
         </div>
         <h2 className='text-5xl z-10 text-center'>Deze week mag...</h2>
@@ -53,7 +53,7 @@ function App() {
         <h3 className='text-4xl z-10 text-center'>Volgende week mag {people[(week + 1) % people.length]}</h3>
         <div className={`pitouholder`}>
           {
-            randomArray().map((x,i) => <img key={i+"b"} src={`${process.env.PUBLIC_URL}/pitou${x}.png`} className={"z-10 max-w-1/3 pitou "+ getRandomAnimationDirection()}/>)
+            randomArray().map((x,i) => <img key={i+"b"} alt="pitou!" src={`${process.env.PUBLIC_URL}/pitou${x}.png`} className={"z-10 max-w-1/3 pitou "+ getRandomAnimationDirection()}/>)
           }
         </div>
       </div>
