@@ -11,7 +11,7 @@ Date.prototype.getWeekNumber = function(){
 };
 
 function App() {
-  const people = ["Frederik", "Thijn", "Bram", "Thomas", "Kay"]
+  const people = ["Kay", "Frederik", "Thijn", "Bram", "Thomas"]
   const styles = ["rainbow", "blues", "superhero", "radial", "tilt", "purple", "horizon", "slate"]
   // const [person, setPerson] = useState();
   const [week, setWeek] = useState(0);
